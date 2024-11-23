@@ -1,0 +1,60 @@
+{% extends 'core/base.html' %}
+
+{% block title %}Portafolio{% endblock %}
+
+{% block background %}{% load static %}{% static 'core/img/portafolio.jpg' %}{% endblock %}
+
+{% block headers %}
+<h1>Portafolio</h1>
+<span class="subheading">Proyectos</span>
+{% endblock %}
+
+{% block content %}
+    <!-- Proyecto: Infraestructura como Servicio -->
+    <div class="row project mb-4">
+        <!-- Imagen del proyecto -->
+        <div class="col-lg-4 col-md-5 offset-lg-1">
+            <img class="img-fluid rounded" src="{% static 'core/img/iac.jpeg' %}" alt="IAC Virtual Assistant">
+        </div>
+        
+        <!-- Detalles del proyecto -->
+        <div class="col-lg-6 col-md-7">
+            <h2 class="section-heading title">IAC Virtual Assistant</h2>
+            <p>IAC Voice es una aplicación móvil desarrollada en React Native que funciona como un asistente virtual inteligente.</p>
+            <a href="https://main.d2oiee202v4h3m.amplifyapp.com/" class="btn btn-primary">
+                Más Información
+            </a>
+        </div>
+    </div>
+    <hr>
+
+    <!-- Proyecto: Dispensador de comida para mascotas -->
+    <div class="row project mb-4">
+        <!-- Imagen del proyecto -->
+        <div class="col-lg-4 col-md-5 offset-lg-1">
+            <img class="img-fluid rounded" src="{% static 'core/img/pet-dispenser.jpeg' %}" alt="Dispensador de comida para mascotas">
+        </div>
+        
+        <!-- Detalles del proyecto -->
+        <div class="col-lg-6 col-md-7">
+            <h2 class="section-heading title">Aplicación móvil para dispensador automático de comida</h2>
+            <p>En este proyecto, desarrollado en la <strong>Universidad Tecnológica del Valle de Toluca (UTVT)</strong> entre enero y abril de 2023, se creó una aplicación móvil para controlar el manejo de un dispensador automático de comida para mascotas.</p>
+        </div>
+    </div>
+    <hr>
+
+    <!-- Proyecto: Página web del tren interurbano -->
+    <div class="row project mb-4">
+        <!-- Imagen del proyecto -->
+        <div class="col-lg-4 col-md-5 offset-lg-1">
+            <img class="img-fluid rounded" src="{% static 'core/img/train-website.jpeg' %}" alt="Página web del tren interurbano">
+        </div>
+        
+        <!-- Detalles del proyecto -->
+        <div class="col-lg-6 col-md-7">
+            <h2 class="section-heading title">Página web del tren interurbano México-Toluca</h2>
+            <p>En este proyecto, desarrollado en la <strong>Universidad Tecnológica del Valle de Toluca (UTVT)</strong> entre mayo y agosto de 2022, se diseñó una página web para informar sobre el tren interurbano México-Toluca.</p>
+        </div>
+    </div>
+    <hr>
+{% endblock %}
